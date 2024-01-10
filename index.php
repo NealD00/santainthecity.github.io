@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>December</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/images/grinchicon.png" type="image/x-icon">
+    <!--<link rel="stylesheet" href="normalize.css">-->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <a href="https://www.google.com/" class="logo">logo</a>
+            <input type="checkbox"  id="menu" />
+            <label for="menu">
+                <img src="images/menu.svg" class="menu-icon" alt="menu">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="nosotros.php" >Inicio</a></li>
+                    <li><a href="#" >Nosotros</a></li>
+                    <li><a href="#" >Servicios</a></li>
+                    <li><a href="#" >Contacto</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+        <div class="header-txt"><br><br>
+            <h1>SANTA LLEGO A LA CIUDAD</h1><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsa sint, doloribus libero tenetur rerum, magni blanditiis ullam eos velit, ipsum facilis expedita. Velit quos incidunt sit voluptatum labore modi.
+            </p><br><br>
+            
+            <a href="#" class="btn-1">INFORMACION</a>
+        </div>
+
+        <div class="header-img">
+            <img src="images/grinch.jpg" alt="">
+        </div>
+        
+         </div>
+
+    </header>
+
+    <section class="about container">
+
+        <div class="about-img" >
+            <img src="images/ladie.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, earum numquam! Nam aliquid ipsum molestiae voluptatibus voluptatem, eligendi quod illo provident qui cum quisquam officiis natus, autem in eos cumque.
+            </p>
+            <br>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, earum numquam! Nam aliquid ipsum molestiae voluptatibus voluptatem, eligendi quod illo provident qui cum quisquam officiis natus, autem in eos cumque.
+            </p>
+        </div>
+
+    </section>
+
+    <main class="servicios">
+
+        <h2>Servicios</h2><br>
+        <div class="servicios-content container">
+
+            <div class="servicio-1">
+            <i class="fa-sharp fa-solid fa-snowplow"></i>
+            <h3>Renos y Trineos</h3>
+            </div>
+            
+            <div class="servicio-1">
+            <i class="fa-sharp fa-solid fa-snowman"></i>
+            <h3>Muñecos de Nieve</h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-tree"></i>
+                <h3>Arboles Naviñeos</h3>
+                </div>
+
+            <div class="servicio-1">
+            <i class="fa-solid fa-person-skiing"></i>
+            <h3>Grinch feelings</h3>
+            </div>
+
+    </div>
+
+    </main>
+
+    <br><br>
+    <section class="formulario container">
+
+        <form method="post" autocomplete="off">
+            
+            <h2> ingresa tus Datos</h2>
+
+                <div class="input-group">
+
+                    <div class="input-container">
+                        <input type="text" name="name" placeholder="Nombre y Apellido">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" name="phone" placeholder="Telefono">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+        
+                        <div class="input-container">
+                            <input type="email" name="email" placeholder="Correo">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        
+                        <div class="input-container">
+                            <textarea name="message" placeholder="Detalles" ></textarea>
+                        </div>
+
+                        <input type="submit" name="send" class="btn" onClick="myFunction()">
+                </div>
+
+        
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <a href="#" class="logo">logo</a>
+        </div>
+
+        <div class="link">
+            <ul></ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        </div>
+    </footer>
+
+    <?php
+        include("send.php");
+    ?>
+
+    <script>
+        function myFunction(){
+            window.location.href="http://localhost/PracticaDecember"
+        }
+    </script>
+
+</body>
+</html>
